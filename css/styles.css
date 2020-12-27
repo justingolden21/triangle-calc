@@ -1,0 +1,24 @@
+img, button {
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+::-moz-selection {
+	background: #e6e6e6;
+}
+::selection {
+	background: #e6e6e6;
+}
+
+@media (min-width: 640px) { /* sm */
+}
+
+@media (min-width: 768px) { /* md */
+}
+
+@media (min-width: 1024px) { /* lg */
+}
+
+@media (min-width: 1280px) { /* xl */
+}
