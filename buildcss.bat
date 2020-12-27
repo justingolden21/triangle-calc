@@ -1,2 +1,1 @@
-call npm run build-css
-PAUSE
+npm run build

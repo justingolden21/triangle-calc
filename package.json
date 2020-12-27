@@ -4,7 +4,7 @@
   "description": "A calculator for various types of triangles",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o dist/css/styles.css"
+    "build": "postcss src/styles.css -o dist/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
