@@ -1,4 +1,4 @@
-# <img src="icon.png" width="64px"> Triangle Calculator
+# <img src="dist/img/icon.png" width="64px"> Triangle Calculator
 
 ### About
 
