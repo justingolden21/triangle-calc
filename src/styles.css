@@ -26,3 +26,7 @@ img, button {
 
 @media (min-width: 1280px) { /* xl */
 }
+
+body {
+	/*background-color: orange;*/
+}
