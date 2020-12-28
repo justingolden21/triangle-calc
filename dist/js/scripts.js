@@ -1,7 +1,15 @@
 $( ()=> {
+	$('.tab-content').css('display', 'none');
+	$('.tab').click( (e)=> {
+		$('.tab').removeClass('active');
+		$(e.target).addClass('active');
 
+		openTab($(e.target).attr('data-tab') );
+	});
+	$('.tab[data-tab="sss"]').click();
 });
 
-// window.onkeyup = function(e) {
-// 	let key = e.keyCode ? e.keyCode : e.which;
-// }
+function openTab(tabName) {
+	$('.tab-content').css('display', 'none');
+	$(`#${tabName}`).fadeIn();
+}
