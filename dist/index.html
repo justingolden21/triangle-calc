@@ -18,7 +18,28 @@
 	<script src="js/scripts.js"></script>
 
 </head>
-<body class="text-center m-2 text-gray-900">
+<body class="text-center m-2 text-gray-700">
+	<button class="btn sm float-left">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+	</button>
+	<button class="btn sm clear">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+	</button>
+	<button class="btn sm clear">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+	</button>
+	<button class="btn sm clear">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+	</button>
+	<button class="btn sm clear">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+	</button>
+	<button class="btn sm clear">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>		
+	</button>
+	<button class="btn sm clear float-right">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>		
+	</button>
 	<h1>Triangle Calculator</h1>
 
 	<section class="container px-4 py-8 mx-auto">
@@ -133,16 +154,26 @@
 				<p>A[10, 0] B[0, 0] C[5, 8.66]</p>
 			</div>
 		</div>
-		<button class="btn indigo">Calculate</button>
+		<button class="btn md indigo">Calculate</button>
 		<h1 class="mt-4">Equilateral triangle</h1>
 		<hr>
 		<div class="border-2 border-gray-300 rounded m-4 p-4 mx-auto 
-			grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+			grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-4">
 			<div>
 				<b>Area and Perimeter</b>
 				<p>Area: T = 43.301</p>
 				<p>Perimeter: p = 30</p>
 				<p>Semiperimeter: s = 15</p>
+			</div>
+			<div>
+				<b>Incircle</b>
+				<p>Inradius: r = 2.887</p>
+				<p>Inscribed circle coordinates: I[5, 2.887]</p>
+			</div>
+			<div>
+				<b>Circumcircle</b>
+				<p>Circumradius: R = 5.774</p>
+				<p>Circumscribed circle coordinates: U[5, 2.887]</p>
 			</div>
 			<div>
 				<b>Medians</b>
@@ -163,16 +194,6 @@
 				<p>Bisection: p<sub>a</sub> = 8.66</p>
 				<p>Bisection: p<sub>b</sub> = 8.66</p>
 				<p>Bisection: p<sub>c</sub> = 8.66</p>
-			</div>
-			<div>
-				<b>Incircle and Circumcircle</b>
-				<p>Inradius: r = 2.887</p>
-				<p>Circumradius: R = 5.774</p>
-				<p>Inscribed circle coordinates: I[5, 2.887]</p>
-				<p>Circumscribed circle coordinates: U[5, 2.887]</p>
-			</div>
-			<div>
-				
 			</div>
 		</div>
 	</section>
