@@ -57,7 +57,7 @@
 	a {
 		@apply text-indigo-500;
 	}
-	a:hover {
+	a:hover:not(.tab) {
 		text-decoration: underline;
 	}
 

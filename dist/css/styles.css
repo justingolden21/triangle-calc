@@ -727,7 +727,7 @@ a {
   color: rgba(99, 102, 241, var(--tw-text-opacity));
 }
 
-a:hover {
+a:hover:not(.tab) {
   text-decoration: underline;
 }
 

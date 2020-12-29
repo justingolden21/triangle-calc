@@ -21,8 +21,9 @@
 <body class="text-center m-2 text-gray-900">
 	<h1>Triangle Calculator</h1>
 
-	<section class="container px-4 py-8 mx-auto flex flex-col">
-		<div class="block sm:flex mb-8 mx-auto sticky top-0 bg-white">
+	<section class="container px-4 py-8 mx-auto">
+		<div class="mb-8 mx-auto md:sticky md:top-0 bg-white
+			grid grid-cols-1 md:grid-cols-5">
 			<a class="active tab" data-tab="sss">
 				SSS Triangle
 			</a>
@@ -48,8 +49,9 @@
 			<p>Enter two side lengths and the angle between them and calculate the remaining side and angles</p>
 		</div>
 
-		<div id="side-angle-inputs" class="border-2 border-gray-300 rounded m-4 p-4 mx-auto block sm:flex">
-			<div class="flex-col">
+		<div id="side-angle-inputs" class="border-2 border-gray-300 rounded m-4 p-4 mx-auto
+			grid grid-cols-1 md:grid-cols-3 gap-4">
+			<div>
 				Sides:
 				<div class="m-2">
 					<label for="side-a-input"><b>a</b> :</label>
@@ -64,7 +66,7 @@
 					<input id="side-c-input" type="number" value="10">
 				</div>
 			</div>
-			<div class="flex-col">
+			<div>
 				Angles:
 				<div class="m-2">
 					<label for="angle-a-input"><b>&alpha;</b> :</label>
@@ -91,14 +93,15 @@
 					</select>
 				</div>
 			</div>
-			<div class="flex-col">
+			<div class="mx-auto">
 				<img class="m-4 w-32 float-right" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Triangle_-_angles%2C_vertices%2C_sides.svg">
 			</div>
 		</div>
 		<button class="btn indigo">Calculate</button>
 		<h1 class="mt-4">Equilateral triangle</h1>
 		<hr>
-		<div class="border-2 border-gray-300 rounded m-4 p-4 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
+		<div class="border-2 border-gray-300 rounded m-4 p-4 mx-auto 
+			grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 			<div>
 				<p>Area: T = 43.301</p>
 				<p>Perimeter: p = 30</p>
