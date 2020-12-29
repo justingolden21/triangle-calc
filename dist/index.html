@@ -20,35 +20,81 @@
 <body class="text-center m-2 text-gray-900">
 	<h1>Triangle Calculator</h1>
 
-	<section>
-		<div class="container px-4 py-8 mx-auto flex flex-col">
-			<div class="flex mb-8">
-				<a class="active tab" data-tab="sss">
-					SSS Triangle
-				</a>
-				<a class="tab" data-tab="sas">
-					SAS Triangle
-				</a>
-				<a class="tab">
-					SSA Triangle
-				</a>
-				<a class="tab">
-					AAS Triangle
-				</a>
-				<a class="tab">
-					ASA Triangle
-				</a>
-			</div>
-			<div id="sss" class="tab-content">
-				<h2 class="mb-4">Side Side Side</h2>
-				<p>Enter three side lengths and calculate the angles</p>
-			</div>
-			<div id="sas" class="tab-content">
-				<h2 class="mb-4">Side Angle Side</h2>
-				<p>Enter two side lengths and the angle between them and calculate the remaining side and angles</p>
-			</div>
-
+	<section class="container px-4 py-8 mx-auto flex flex-col">
+		<div class="flex mb-8">
+			<a class="active tab" data-tab="sss">
+				SSS Triangle
+			</a>
+			<a class="tab" data-tab="sas">
+				SAS Triangle
+			</a>
+			<a class="tab">
+				SSA Triangle
+			</a>
+			<a class="tab">
+				AAS Triangle
+			</a>
+			<a class="tab">
+				ASA Triangle
+			</a>
 		</div>
+		<div id="sss" class="tab-content">
+			<h2 class="mb-4">Side Side Side</h2>
+			<p>Enter three side lengths and calculate the angles</p>
+		</div>
+		<div id="sas" class="tab-content">
+			<h2 class="mb-4">Side Angle Side</h2>
+			<p>Enter two side lengths and the angle between them and calculate the remaining side and angles</p>
+		</div>
+
+		<div id="side-angle-inputs" class="border-2 border-gray-300 rounded m-4 p-2 mx-auto block sm:flex">
+			<div class="flex-col">
+				Sides:
+				<div class="m-2">
+					<label for="side-a-input"><b>a</b> :</label>
+					<input id="side-a-input" type="number" value="10">
+				</div>
+				<div class="m-2">
+					<label for="side-b-input"><b>b</b> :</label>
+					<input id="side-b-input" type="number" value="10">
+				</div>
+				<div class="m-2">
+					<label for="side-c-input"><b>c</b> :</label>
+					<input id="side-c-input" type="number" value="10">
+				</div>
+			</div>
+			<div class="flex-col">
+				Angles:
+				<div class="m-2">
+					<label for="angle-a-input"><b>&alpha;</b> :</label>
+					<input id="angle-a-input" type="number" value="60">
+					<select>
+						<option value="deg">&deg;</option>
+						<option value="rad">&pi;</option>
+					</select>
+				</div>
+				<div class="m-2">
+					<label for="angle-b-input"><b>&beta;</b> :</label>
+					<input id="angle-b-input" type="number" value="60">
+					<select>
+						<option value="deg">&deg;</option>
+						<option value="rad">&pi;</option>
+					</select>
+				</div>
+				<div class="m-2">
+					<label for="angle-c-input"><b>&gamma;</b> :</label>
+					<input id="angle-c-input" type="number" value="60">
+					<select>
+						<option value="deg">&deg;</option>
+						<option value="rad">&pi;</option>
+					</select>
+				</div>
+			</div>
+			<div class="flex-col">
+				<img class="m-4 w-32 float-right" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Triangle_-_angles%2C_vertices%2C_sides.svg">
+			</div>
+		</div>
+		<button class="btn indigo">Calculate</button>
 	</section>
 
 </body>

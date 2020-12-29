@@ -11,20 +11,21 @@
 	}
 
 	h1 {
-		@apply text-2xl font-light;
+		@apply text-2xl font-light tracking-wider;
 	}
 	h2 {
 		@apply text-xl font-medium;
 	}
-	p {
+	p, label {
 		@apply leading-relaxed;
 	}
 }
 
 @layer components {
 	*:focus, button:focus {
-        @apply outline-none ring-2 ring-blue-300;
+        @apply outline-none ring-2 ring-indigo-300;
     }
+
 	.tab {
 		cursor: pointer;
 		@apply sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 font-medium inline-flex items-center leading-none border-gray-200 text-gray-600 hover:text-gray-900 tracking-wider;
@@ -35,9 +36,24 @@
 	.tab:hover {
 		@apply bg-gray-100;
 	}
+
+	input[type=number], select {
+		@apply rounded border-2 border-gray-300 focus:border-indigo-500 py-1 px-3;
+	}
+	input[type=number] {
+		@apply w-24;
+	}
+	input[type=number]:disabled {
+		@apply bg-gray-300;
+	}
+	label.active {
+		@apply text-indigo-500;
+	}
+
+	.btn.indigo {
+		@apply bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded;
+	}
 }
-
-
 
 
 @media (min-width: 640px) { /* sm */
@@ -50,8 +66,4 @@
 }
 
 @media (min-width: 1280px) { /* xl */
-}
-
-body {
-	/*background-color: orange;*/
 }
