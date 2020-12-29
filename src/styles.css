@@ -60,6 +60,14 @@
 	a:hover {
 		text-decoration: underline;
 	}
+
+	p {
+		display: block;
+	}
+
+	hr {
+		@apply border bg-gray-300 border-gray-300 my-2;
+	}
 }
 
 

@@ -12,6 +12,7 @@
 	<!-- <link rel="shortcut icon" href="img/icon.png"> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.2/es5/startup.js"></script>
 
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="js/scripts.js"></script>
@@ -21,7 +22,7 @@
 	<h1>Triangle Calculator</h1>
 
 	<section class="container px-4 py-8 mx-auto flex flex-col">
-		<div class="block sm:flex mb-8 mx-auto">
+		<div class="block sm:flex mb-8 mx-auto sticky top-0 bg-white">
 			<a class="active tab" data-tab="sss">
 				SSS Triangle
 			</a>
@@ -47,7 +48,7 @@
 			<p>Enter two side lengths and the angle between them and calculate the remaining side and angles</p>
 		</div>
 
-		<div id="side-angle-inputs" class="border-2 border-gray-300 rounded m-4 p-2 mx-auto block sm:flex">
+		<div id="side-angle-inputs" class="border-2 border-gray-300 rounded m-4 p-4 mx-auto block sm:flex">
 			<div class="flex-col">
 				Sides:
 				<div class="m-2">
@@ -95,6 +96,29 @@
 			</div>
 		</div>
 		<button class="btn indigo">Calculate</button>
+		<h1 class="mt-4">Equilateral triangle</h1>
+		<hr>
+		<div class="border-2 border-gray-300 rounded m-4 p-4 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6">
+			<div>
+				<p>Area: T = 43.301</p>
+				<p>Perimeter: p = 30</p>
+				<p>Semiperimeter: s = 15</p>
+			</div>
+			<div>
+				<p>Height: h<sub>a</sub> = 8.66</p>
+				<p>Height: h<sub>b</sub> = 8.66</p>
+				<p>Height: h<sub>c</sub> = 8.66</p>
+			</div>
+			<div>
+				<p>Median: m<sub>a</sub> = 8.66</p>
+				<p>Median: m<sub>b</sub> = 8.66</p>
+				<p>Median: m<sub>c</sub> = 8.66</p>
+			</div>
+			<div>
+				<p>Inradius: r = 2.887</p>
+				<p>Circumradius: R = 5.774</p>
+			</div>
+		</div>
 	</section>
 	<footer>
 		<p>References</p>

@@ -731,6 +731,20 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  display: block;
+}
+
+hr {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  border-width: 1px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
