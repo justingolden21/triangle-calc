@@ -28,10 +28,10 @@
 
 	.tab {
 		cursor: pointer;
-		@apply sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 font-medium inline-flex items-center leading-none border-gray-200 text-gray-600 hover:text-gray-900 tracking-wider;
+		@apply sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 font-medium inline-flex items-center leading-none border-gray-200 text-gray-600 hover:text-gray-900 tracking-wider rounded-t-md;
 	}
 	.tab.active {
-		@apply bg-gray-100 border-indigo-500 text-indigo-500 rounded-t;
+		@apply bg-gray-100 border-indigo-500 text-indigo-500;
 	}
 	.tab:hover {
 		@apply bg-gray-100;
