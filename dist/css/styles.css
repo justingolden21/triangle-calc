@@ -657,10 +657,9 @@ p, a, label {
 .tab.active {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
-  --tw-border-opacity: 1;
-  border-color: rgba(99, 102, 241, var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgba(99, 102, 241, var(--tw-text-opacity));
+  /*border-indigo-500*/
 }
 
 .tab:hover {
@@ -788,6 +787,18 @@ label.active {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.alert {
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 a {
   --tw-text-opacity: 1;
   color: rgba(99, 102, 241, var(--tw-text-opacity));
@@ -809,6 +820,38 @@ hr {
   border-width: 1px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.tab:first-child.active ~ .presentation-slider {
+  transform: translateX(0) scaleX(0.2);
+}
+
+.tab:nth-child(2).active ~ .presentation-slider {
+  transform: translateX(20%) scaleX(0.2);
+}
+
+.tab:nth-child(3).active ~ .presentation-slider {
+  transform: translateX(40%) scaleX(0.2);
+}
+
+.tab:nth-child(4).active ~ .presentation-slider {
+  transform: translateX(60%) scaleX(0.2);
+}
+
+.tab:nth-child(5).active ~ .presentation-slider {
+  transform: translateX(80%) scaleX(0.2);
+}
+
+.presentation-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  transform-origin: 0 0;
+  transition: transform 0.25s linear;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

@@ -1,0 +1,11 @@
+sources
+
+https://tutorial.math.lamar.edu/Extras/CheatSheets_Tables.aspx#TrigSheet
+https://www.triangle-calculator.com/?what=sss
+https://en.wikipedia.org/wiki/Solution_of_triangles#Solving_plane_triangles
+
+https://tailwindcss.com/docs/grid-column
+https://www.mathjax.org/#gettingstarted
+https://heroicons.dev
+https://mertjf.github.io/tailblocks/
+https://codepen.io/everdimension/pen/xZLggo/
