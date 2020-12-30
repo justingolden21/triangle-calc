@@ -9,3 +9,4 @@ https://www.mathjax.org/#gettingstarted
 https://heroicons.dev
 https://mertjf.github.io/tailblocks/
 https://codepen.io/everdimension/pen/xZLggo/
+https://www.w3schools.com/howto/howto_css_tooltip.asp

@@ -13,6 +13,13 @@ const DIAGRAM_IDS = {
 }
 
 $( ()=> {
+
+	// tooltips
+	$('button[title]').each( (idx, elm)=> {
+		$(elm).addClass('tooltip').append( $(`<div class="tooltiptext">${$(elm).attr('title')}</div>`) );
+	});
+
+
 	$('.tab-content').css('display', 'none');
 	$('.tab').click( (e)=> {
 		// tab active classes
