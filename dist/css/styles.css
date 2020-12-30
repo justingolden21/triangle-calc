@@ -772,12 +772,25 @@ label.active {
   padding-right: 1rem;
 }
 
+.btn.clear {
+  border-color: transparent;
+}
+
 .btn.clear:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
+}
+
+.btn.clear {
+  border-width: 2px;
+}
+
+.btn.outline:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
 }
 
-.btn.clear {
+.btn.outline {
   --tw-border-opacity: 1;
   border-color: rgba(107, 114, 128, var(--tw-border-opacity));
   border-width: 2px;
@@ -785,17 +798,17 @@ label.active {
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
-.btn.clear:hover {
+.btn.outline:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-.btn.clear.dark:hover {
+.btn.outline.dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
 
-.btn.clear.dark {
+.btn.outline.dark {
   --tw-border-opacity: 1;
   border-color: rgba(55, 65, 81, var(--tw-border-opacity));
   border-width: 2px;
@@ -803,7 +816,7 @@ label.active {
   color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
-.btn.clear.dark:hover {
+.btn.outline.dark:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
@@ -881,6 +894,7 @@ hr {
 .tooltip .tooltiptext {
   --tw-bg-opacity: 1;
   background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  font-weight: 400;
   text-align: center;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -897,6 +911,10 @@ hr {
   transition: opacity 0.25s;
 }
 
+.tooltip-bottom .tooltiptext {
+  bottom: -125%;
+}
+
 .tooltip .tooltiptext::after {
   content: '';
   position: absolute;
@@ -906,6 +924,11 @@ hr {
   border-width: 4px;
   border-style: solid;
   border-color: #6B7280 transparent transparent transparent;
+}
+
+.tooltip-bottom .tooltiptext::after {
+  top: -25%;
+  border-color: transparent transparent #6B7280 transparent;
 }
 
 .tooltip:hover .tooltiptext {

@@ -85,9 +85,12 @@
 		@apply py-2 px-4;
 	}
 	.btn.clear {
+		@apply border-2 border-transparent hover:border-gray-500;
+	}
+	.btn.outline {
 		@apply border-2 border-gray-500 text-gray-500 hover:bg-gray-500 hover:text-white;
 	}
-	.btn.clear.dark {
+	.btn.outline.dark {
 		@apply border-2 border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white;
 	}
 	.btn.gray {
@@ -127,41 +130,49 @@
 
 
 
-.tooltip {
-	position: relative;
-	display: inline-block;
-}
+	.tooltip {
+		position: relative;
+		display: inline-block;
+	}
 
-.tooltip .tooltiptext {
-	@apply text-center text-white bg-gray-500;
-	visibility: hidden;
-	width: 80px;
-	@apply rounded py-1;
-	position: absolute;
-	bottom: 125%;
-	left: 50%;
-	margin-left: -40px;
-	opacity: 0;
-	transition: opacity 0.25s;
-}
+	.tooltip .tooltiptext {
+		@apply text-center font-normal text-white bg-gray-500;
+		visibility: hidden;
+		width: 80px;
+		@apply rounded py-1;
+		position: absolute;
+		bottom: 125%;
+		left: 50%;
+		margin-left: -40px;
+		opacity: 0;
+		transition: opacity 0.25s;
+	}
 
-.tooltip .tooltiptext::after {
-	content: '';
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -4px;
-	border-width: 4px;
-	border-style: solid;
-	border-color: #6B7280 transparent transparent transparent;
-}
+	.tooltip-bottom .tooltiptext {
+		bottom: -125%;
+	}
 
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
-}
+	.tooltip .tooltiptext::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -4px;
+		border-width: 4px;
+		border-style: solid;
+		border-color: #6B7280 transparent transparent transparent;
+	}
+
+	.tooltip-bottom .tooltiptext::after {
+		top: -25%;
+		border-color: transparent transparent #6B7280 transparent;
+	}
 
 
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
 
 
 }
