@@ -557,9 +557,10 @@ video {
 }
 
 h1 {
-  font-weight: 300;
   font-size: 1.5rem;
   line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
   letter-spacing: 0.05em;
 }
 
@@ -657,14 +658,64 @@ p, a, label {
 .tab.active {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(99, 102, 241, var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgba(99, 102, 241, var(--tw-text-opacity));
-  /*border-indigo-500*/
+}
+
+@media (min-width: 768px) {
+  .tab.active {
+    --tw-border-opacity: 1;
+    border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  }
 }
 
 .tab:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.tab:first-child.active ~ .presentation-slider {
+  transform: translateX(0) scaleX(0.2);
+}
+
+.tab:nth-child(2).active ~ .presentation-slider {
+  transform: translateX(20%) scaleX(0.2);
+}
+
+.tab:nth-child(3).active ~ .presentation-slider {
+  transform: translateX(40%) scaleX(0.2);
+}
+
+.tab:nth-child(4).active ~ .presentation-slider {
+  transform: translateX(60%) scaleX(0.2);
+}
+
+.tab:nth-child(5).active ~ .presentation-slider {
+  transform: translateX(80%) scaleX(0.2);
+}
+
+.presentation-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .presentation-slider {
+    display: block;
+  }
+}
+
+.presentation-slider {
+  transform-origin: 0 0;
+  transition: transform 0.25s linear;
 }
 
 input[type=number], select {
@@ -820,38 +871,6 @@ hr {
   border-width: 1px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.tab:first-child.active ~ .presentation-slider {
-  transform: translateX(0) scaleX(0.2);
-}
-
-.tab:nth-child(2).active ~ .presentation-slider {
-  transform: translateX(20%) scaleX(0.2);
-}
-
-.tab:nth-child(3).active ~ .presentation-slider {
-  transform: translateX(40%) scaleX(0.2);
-}
-
-.tab:nth-child(4).active ~ .presentation-slider {
-  transform: translateX(60%) scaleX(0.2);
-}
-
-.tab:nth-child(5).active ~ .presentation-slider {
-  transform: translateX(80%) scaleX(0.2);
-}
-
-.presentation-slider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
-  transform-origin: 0 0;
-  transition: transform 0.25s linear;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

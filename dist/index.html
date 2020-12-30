@@ -22,23 +22,23 @@
 	<button class="btn sm float-left">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
 	</button>
-	<button class="btn sm clear float-right">
+	<button class="btn sm float-right">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>		
 	</button>
 	<h1 class="mb-4">Triangle Calculator</h1>
-	<button class="btn sm clear">
+	<button class="btn sm">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
 	</button>
-	<button class="btn sm clear">
+	<button class="btn sm">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 	</button>
-	<button class="btn sm clear">
+	<button class="btn sm">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
 	</button>
-	<button class="btn sm clear">
+	<button class="btn sm">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
 	</button>
-	<button class="btn sm clear">
+	<button class="btn sm">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>		
 	</button>
 
@@ -46,6 +46,7 @@
 		<div class="mb-8 mx-auto md:sticky md:top-0 bg-white
 			grid grid-cols-1 md:grid-cols-5">
 			<a class="active tab" data-tab="sss">
+				<!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-width="2" d="M6 18L12 6L18 18Z"></path></svg> -->
 				SSS Triangle
 			</a>
 			<a class="tab" data-tab="sas">
@@ -93,7 +94,7 @@
 				<div class="m-2">
 					<label for="angle-a-input"><b>&alpha;</b> :</label>
 					<input id="angle-a-input" type="number" value="60">
-					<select>
+					<select class="ml-1">
 						<option value="deg">&deg;</option>
 						<option value="rad">&pi;</option>
 					</select>
@@ -101,7 +102,7 @@
 				<div class="m-2">
 					<label for="angle-b-input"><b>&beta;</b> :</label>
 					<input id="angle-b-input" type="number" value="60">
-					<select>
+					<select class="ml-1">
 						<option value="deg">&deg;</option>
 						<option value="rad">&pi;</option>
 					</select>
@@ -109,20 +110,20 @@
 				<div class="m-2">
 					<label for="angle-c-input"><b>&gamma;</b> :</label>
 					<input id="angle-c-input" type="number" value="60">
-					<select>
+					<select class="ml-1">
 						<option value="deg">&deg;</option>
 						<option value="rad">&pi;</option>
 					</select>
 				</div>
 			</div>
 			<div class="mx-auto">
-				<svg id="diagram" class="m-4 w-32"
+				<svg id="diagram" class="m-4 w-40"
 				xmlns="http://www.w3.org/2000/svg"
 				viewbox="0 0 179.36162 160.28122">
 					<g transform="translate(-17.26786,-881.2015)">
-						<g style="fill:none;stroke:#374151">
+						<g style="fill:none;stroke:#6B7280;stroke-width:2">
 							<path
-							style="stroke-width:2"
+							style="stroke-width:4"
 							d="M 194.95944,861.44334 L 23.29892,861.55663 L 109.03106,712.83761 L 194.95944,861.44334 z "
 							transform="matrix(0.862156,4.198639e-4,0.176119,0.827158,-139.3847,312.9843)" />
 							<path
@@ -135,7 +136,7 @@
 							d="M 19.214363,927.43159 A 32.829956,32.829956 0 0 1 31.139102,903.28717"
 							transform="translate(129.4886,97.87201)" />
 						</g>
-						<g fill="#374151">
+						<g fill="#6B7280">
 							<path id="A" d="M 22.611609,1030.8243 L 20.470984,1036.629 L 24.760046,1036.629 L 22.611609,1030.8243 M 21.720984,1029.2696 L 23.510046,1029.2696 L 27.955359,1040.9337 L 26.314734,1040.9337 L 25.252234,1037.9415 L 19.994421,1037.9415 L 18.931921,1040.9337 L 17.267859,1040.9337 L 21.720984,1029.2696"/>
 							<path id="B" d="M 189.93415,1035.3634 L 189.93415,1039.6369 L 192.4654,1039.6369 C 193.31436,1039.6369 193.94196,1039.4624 194.34822,1039.1134 C 194.75967,1038.7592 194.9654,1038.2202 194.9654,1037.4962 C 194.9654,1036.7671 194.75967,1036.2306 194.34822,1035.8869 C 193.94196,1035.5379 193.31436,1035.3634 192.4654,1035.3634 L 189.93415,1035.3634 M 189.93415,1030.5665 L 189.93415,1034.0822 L 192.27009,1034.0822 C 193.04092,1034.0822 193.61384,1033.9389 193.98884,1033.6525 C 194.36904,1033.3608 194.55915,1032.9181 194.55915,1032.3244 C 194.55915,1031.7358 194.36904,1031.2957 193.98884,1031.004 C 193.61384,1030.7124 193.04092,1030.5665 192.27009,1030.5665 L 189.93415,1030.5665 M 188.35603,1029.2697 L 192.38728,1029.2697 C 193.5904,1029.2697 194.51748,1029.5197 195.16853,1030.0197 C 195.81956,1030.5197 196.14508,1031.2306 196.14509,1032.1525 C 196.14508,1032.866 195.97842,1033.4337 195.64509,1033.8556 C 195.31175,1034.2775 194.82217,1034.5405 194.17634,1034.6447 C 194.95238,1034.8113 195.55394,1035.1603 195.98103,1035.6915 C 196.41331,1036.2176 196.62946,1036.8764 196.62947,1037.6681 C 196.62946,1038.7098 196.27529,1039.5145 195.56697,1040.0822 C 194.85863,1040.6499 193.85081,1040.9337 192.54353,1040.9337 L 188.35603,1040.9337 L 188.35603,1029.2697"/>
 							<path id="C" d="M 83.876114,882.31085 L 83.876114,883.97491 C 83.344854,883.48013 82.777146,883.11034 82.172989,882.86554 C 81.574023,882.62076 80.936002,882.49836 80.258926,882.49835 C 78.925588,882.49836 77.904755,882.90722 77.196426,883.72491 C 76.48809,884.53742 76.133924,885.71451 76.133926,887.25616 C 76.133924,888.79263 76.48809,889.96971 77.196426,890.78741 C 77.904755,891.59992 78.925588,892.00617 80.258926,892.00616 C 80.936002,892.00617 81.574023,891.88377 82.172989,891.63898 C 82.777146,891.39419 83.344854,891.0244 83.876114,890.5296 L 83.876114,892.17804 C 83.324021,892.55304 82.738084,892.83429 82.118301,893.02179 C 81.50371,893.20929 80.852669,893.30304 80.165176,893.30304 C 78.399547,893.30304 77.008923,892.76398 75.993301,891.68585 C 74.977675,890.60252 74.469863,889.12596 74.469864,887.25616 C 74.469863,885.38117 74.977675,883.90461 75.993301,882.82648 C 77.008923,881.74316 78.399547,881.20149 80.165176,881.20148 C 80.863086,881.20149 81.519335,881.29524 82.133926,881.48273 C 82.753709,881.66503 83.334437,881.94107 83.876114,882.31085"/>
@@ -157,7 +158,7 @@
 				<p>A[10, 0] B[0, 0] C[5, 8.66]</p>
 			</div>
 		</div>
-		<button class="btn md indigo mb-2">Calculate</button>
+		<button class="btn md indigo mb-2">Calculate </button>
 		<hr>
 		<h1 class="mt-4">Equilateral triangle</h1>
 		<div class="border-2 border-gray-300 rounded m-4 p-4 mx-auto 
