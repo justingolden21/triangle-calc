@@ -618,6 +618,10 @@ p, a, label {
   --tw-ring-color: rgba(165, 180, 252, var(--tw-ring-opacity));
 }
 
+body {
+  overflow-x: hidden; /* fullscreen btn tooltip */
+}
+
 .tab {
   cursor: pointer;
   --tw-border-opacity: 1;
