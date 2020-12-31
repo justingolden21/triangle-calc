@@ -38,6 +38,9 @@
 	<button class="btn sm clear" data-title="Copy">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
 	</button>
+	<button class="btn sm clear" data-title="Formulas">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8"></path></svg>		
+	</button>
 	<button class="btn sm clear" data-title="Contact">
 		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>		
 	</button>
@@ -72,9 +75,9 @@
 			<p>Enter two side lengths and the angle between them and calculate the remaining side and angles</p>
 		</div>
 
-		<div id="side-angle-inputs" class="border-2 border-gray-300 rounded m-4 p-4 mx-auto
+		<div class="border-2 border-gray-300 rounded m-4 p-4 mx-auto
 			grid grid-cols-1 md:grid-cols-3 gap-4">
-			<div>
+			<div id="side-inputs">
 				Sides:
 				<div class="m-2">
 					<label for="side-a-input"><b>a</b> :</label>
@@ -89,7 +92,7 @@
 					<input id="side-c-input" type="number" value="10">
 				</div>
 			</div>
-			<div>
+			<div id="angle-inputs">
 				Angles:
 				<div class="m-2">
 					<label for="angle-a-input"><b>&alpha;</b> :</label>
@@ -152,10 +155,23 @@
 				<!-- <img id="diagram" class="m-4 w-32 float-right" src="img/diagram.svg"> -->
 				<!-- <img class="m-4 w-32 float-right" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Triangle_-_angles%2C_vertices%2C_sides.svg"> -->
 			</div>
-			<div class="col-start-2">
+			<div id="coord-inputs" class="col-span-3">
 				<div class="alert hidden">Please enter all inputs</div>
-				<p>Vertex coordinates:</p>
-				<p>A[10, 0] B[0, 0] C[5, 8.66]</p>
+				Coordinates (optional):
+				<div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
+					<div class="m-2">
+						<label for="coord-a-input"><b>A</b> :</label>
+						<input id="coord-a-input" type="text" value="(10, 0)">
+					</div>
+					<div class="m-2">
+						<label for="coord-b-input"><b>B</b> :</label>
+						<input id="coord-b-input" type="text" value="(0, 0)">
+					</div>
+					<div class="m-2">
+						<label for="coord-c-input"><b>C</b> :</label>
+						<input id="coord-c-input" type="text" value="(5, 8.66)">
+					</div>
+				</div>
 			</div>
 		</div>
 		<button class="btn md indigo mb-2">Calculate </button>

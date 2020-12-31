@@ -31,8 +31,8 @@ $( ()=> {
 		openTab(tabName);
 
 		// highlight correct labels, disable correct inputs
-		$('#side-angle-inputs input').attr('disabled', true);
-		$('#side-angle-inputs label').removeClass('active');
+		$('#side-inputs input, #angle-inputs input').attr('disabled', true);
+		$('#side-inputs input label, #angle-inputs input label').removeClass('active');
 		$('#diagram path[id]').css('stroke', '');
 		for(const inputName of TAB_INPUTS[tabName]) {
 			$(`#${inputName}-input`).attr('disabled', false);
