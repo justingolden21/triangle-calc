@@ -82,6 +82,9 @@
 	.btn {
 		@apply text-gray-500 font-bold rounded;
 	}
+	.btn.xs {
+		@apply px-1;
+	}
 	.btn.sm {
 		@apply py-1 px-2;
 	}

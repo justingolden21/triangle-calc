@@ -49,19 +49,19 @@
 		<div class="mb-8 mx-auto md:sticky md:top-0 bg-white
 			grid grid-cols-1 md:grid-cols-5">
 			<a class="active tab" data-tab="sss">
-				<!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-width="2" d="M6 18L12 6L18 18Z"></path></svg> -->
+				<!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-width="2" stroke-linejoin="round" d="M6 18L12 6L18 18Z"></path></svg> -->
 				SSS Triangle
 			</a>
 			<a class="tab" data-tab="sas">
 				SAS Triangle
 			</a>
-			<a class="tab">
+			<a class="tab" data-tab="ssa">
 				SSA Triangle
 			</a>
-			<a class="tab">
+			<a class="tab" data-tab="aas">
 				AAS Triangle
 			</a>
-			<a class="tab">
+			<a class="tab" data-tab="asa">
 				ASA Triangle
 			</a>
 			<div class="presentation-slider" role="presentation"></div>
@@ -74,9 +74,26 @@
 			<h2 class="mb-4">Side Angle Side</h2>
 			<p>Enter two side lengths and the angle between them and calculate the remaining side and angles</p>
 		</div>
+		<div id="ssa" class="tab-content">
+			<h2 class="mb-4">Side Side Angle</h2>
+			<p>Enter two side lengths and the angle opposite one of them and calculate the remaining side and angles</p>
+		</div>
+		<div id="aas" class="tab-content">
+			<h2 class="mb-4">Angle Angle Side</h2>
+			<p>Enter two angles and the side opposite one of them and calculate the remaining sides and angle</p>
+		</div>
+		<div id="asa" class="tab-content">
+			<h2 class="mb-4">Angle Side Angle</h2>
+			<p>Enter two angles and the side between them and calculate the remaining sides and angle</p>
+		</div>
 
-		<div class="border-2 border-gray-300 rounded m-4 p-4 mx-auto
+		<div id="inputs" class="border-2 border-gray-300 rounded m-4 p-4 mx-auto
 			grid grid-cols-1 md:grid-cols-3 gap-4">
+
+			<button class="btn xs clear absolute float-right tooltip-bottom" data-title="<small>Next Combination</small>">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+			</button>
+
 			<div id="side-inputs">
 				Sides:
 				<div class="m-2">
