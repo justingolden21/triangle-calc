@@ -54,24 +54,32 @@ $( ()=> {
 		}
 	});
 
-	$('.tab[data-tab="sss"]').click();
+
+	// read url param
+	let url = new URL(window.location.href);
+	let tabName = url.searchParams.get('type');
+	if(tabName) {
+		// open url tab
+		$(`.tab[data-tab="${tabName}"]`).click();
+	} else {
+		// open first tab
+		$('.tab[data-tab="sss"]').click();
+	}
+
 
 
 
 });
 
 function openTab(tabName) {
-	
+
+	// open the tab, hide others
 	$('.tab-content').css('display', 'none');
 	$(`#${tabName}`).show();
 
-	console.log('before');
+	// focus and select input (side-a is always enabled)
 	$('#side-a-input').focus().select();
-	console.log('after');
 
-	// $('#side-a-input')[0].select().focus();
-
-	// console.log($(`#inputs input:not([disabled])`).first().focus() );
-	// $(`#${tabName}`).next()
-	// .find(':focusable').eq(0).focus();
+	// url param
+	history.replaceState({}, '', '?type=' + tabName); // set url param
 }

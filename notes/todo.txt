@@ -1,1 +1,2 @@
-link the tabs to url param
+modular code (scripts and styles for tabs, etc)
+get tailwind to configure all stylesheets in folder to folder
