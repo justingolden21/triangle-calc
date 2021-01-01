@@ -62,8 +62,8 @@ $( ()=> {
 
 function openTab(tabName) {
 	
-	// $('.tab-content').css('display', 'none');
-	// $(`#${tabName}`).show();
+	$('.tab-content').css('display', 'none');
+	$(`#${tabName}`).show();
 
 	console.log('before');
 	$('#side-a-input').focus().select();
