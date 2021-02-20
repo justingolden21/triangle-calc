@@ -27,11 +27,12 @@ window.addEventListener('load', () => {
 		const tabName = u(e.target).attr('data-tab');
 
 		// highlight correct labels, disable correct inputs
-		u('#side-inputs input, #angle-inputs input').attr('disabled', true);
+		u('#side-inputs input, #angle-inputs input').each( (elm, idx)=> elm.disabled = true);
 		u('#side-inputs input label, #angle-inputs input label').removeClass('active');
-		// u('#diagram path[id]').css('stroke', '');
+		u('#diagram path[id]').each( (elm, idx)=> elm.style.stroke = '');
+
 		for(const inputName of TAB_INPUTS[tabName]) {
-			u(`#${inputName}-input`).attr('disabled', false);
+			document.querySelector(`#${inputName}-input`).disabled = false;
 			u(`label[for=${inputName}-input]`).addClass('active');
 			document.querySelector(`#diagram #${DIAGRAM_IDS[inputName]}`).style.stroke = 'rgb(99, 102, 241)'; // indigo-500
 		}
