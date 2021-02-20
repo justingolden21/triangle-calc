@@ -10,10 +10,10 @@
 
 	/* basics */
 	::-moz-selection {
-		@apply bg-gray-100;
+		@apply bg-indigo-100;
 	}
 	::selection {
-		@apply bg-gray-100;
+		@apply bg-indigo-100;
 	}
 	*:focus, button:focus {
 		@apply outline-none ring-2 ring-indigo-300;

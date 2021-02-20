@@ -1,12 +1,20 @@
-# <img src="dist/img/icon.png" width="64px"> Triangle Calculator
+# Triangle Calc
 
 ### About
 
 A calculator for various types of triangles
 
+### Development
+
+First time setup: `npm install`
+
+Development: `npm run dev`
+
+Production: `npm run build`
+
 ### Links
 
-- Live demo: https://justingolden.me/triangle-calc/
+- Live demo: https://justingolden.me/triangle-calc
 
 - This repo: https://github.com/justingolden21/triangle-calc
 

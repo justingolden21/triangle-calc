@@ -2,15 +2,14 @@
   "name": "triangle-calc",
   "version": "1.0.0",
   "description": "A calculator for various types of triangles",
-  "main": "index.js",
   "scripts": {
-    "dev": "postcss src/css/styles.css -o dist/css/styles.css --watch",
-    "build": "cross-env NODE_ENV=production postcss src/css/styles.css -o dist/css/styles.css && cleancss -o dist/css/styles.css dist/css/styles.css" 
+    "dev": "postcss src/styles.css -o docs/css/styles.css --watch --verbose",
+    "build": "cross-env NODE_ENV=production postcss src/styles.css -o docs/css/styles.css && cleancss -o docs/css/styles.css docs/css/styles.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Justin Golden",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.1.0",
     "clean-css-cli": "^4.3.0",
     "cross-env": "^7.0.3",
